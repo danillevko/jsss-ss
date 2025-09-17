@@ -64,18 +64,48 @@
  
 //   console.log(calculateAverageGrade(student));
 
-const items = [
-    { name: 'Футболка', price: 250, quantity: 2 },
-    { name: 'Джинси', price: 800, quantity: 1 },
-    { name: 'Кросівки', price: 1200, quantity: 1 }
-  ];
-  let calculateTotalCost = function(items = []){
-    let total = 0;
-    for(const {price, quantity} of items){
-        total += price * quantity;
-    }
-    return total;
-  }
+// const items = [
+//     { name: 'Футболка', price: 250, quantity: 2 },
+//     { name: 'Джинси', price: 800, quantity: 1 },
+//     { name: 'Кросівки', price: 1200, quantity: 1 }
+//   ];
+//   let calculateTotalCost = function(items = []){
+//     let total = 0;
+//     for(const {price, quantity} of items){
+//         total += price * quantity;
+//     }
+//     return total;
+//   }
  
-  console.log(calculateTotalCost(items)); 
+//   console.log(calculateTotalCost(items)); 
   
+// const person = {
+//   name: 'John',
+//     emails: ['john@gmail.com', 'john@example.com', 'john123@yahoo.com']
+// };
+// const getFirstEmail = function({emails:[item1]}){
+//   return item1;
+// }
+
+// console.log(getFirstEmail(person)); // 'john@gmail.com'
+
+
+// const data = {
+//     users: [
+//       { name: 'John', age: 25 },
+//       { name: 'Jane', age: 17 },
+//       { name: 'Bob', age: 30 },
+//       { name: 'Alice', age: 20 }
+//     ]
+//   };
+//   const getAdultUsers = function({users = []}){
+//     const newData = [];
+//     for(const {name, age} of users){
+//       if(age > 18){
+//         newData.push({name, age});
+//       }
+//     }
+//     return newData;
+//   }
+ 
+// console.log(getAdultUsers(data)); // [{ name: 'John', age: 25 }, { name: 'Bob', age: 30 }, { name: 'Alice', age: 20 }]
