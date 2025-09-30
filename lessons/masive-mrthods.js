@@ -68,18 +68,51 @@
  
 //   console.log(events);
 
-const items = [
-    { name: 'Item A', popularity: 5 },
-    { name: 'Item C', popularity: 2 },
-    { name: 'Item D', popularity: 3 },
-    { name: 'Item B', popularity: 5 }
-  ];
-items.sort((a, b) => {
-    if(a.popularity !== b.popularity){
-        return b.popularity - a.popularity;
+// const items = [
+//     { name: 'Item A', popularity: 5 },
+//     { name: 'Item C', popularity: 2 },
+//     { name: 'Item D', popularity: 3 },
+//     { name: 'Item B', popularity: 5 }
+//   ];
+// items.sort((a, b) => {
+//     if(a.popularity !== b.popularity){
+//         return b.popularity - a.popularity;
+//     }
+//     if(a.name !== b.name){
+//         return a.name - b.name;
+//     }
+// })
+// console.log(items);
+
+
+// const nums = [5, 7, 3, 4]
+// nums.reduce((acc, b) => acc + b, 0);
+// console.log(nums);
+
+
+// const courses = [
+//   { id:'c1', title:'JS Basics',     author:'Ada',   level:'beg', duration:-8,  price: 0   },
+//   { id:'c2', title:'JS Advanced',   author:'Ada',   level:'adv', duration:14, price: 120 },
+//   { id:'c3', title:'React Intro',   author:'Dan',   level:'beg', duration:-10, price: 80  },
+//   { id:'c4', title:'TS Deep Dive',  author:'Bas',   level:'int', duration:-12, price: 100 },
+//   { id:'c5', title:'Node Patterns', author:'TJ',    level:'int', duration:-9,  price: 90  },
+// ];
+// const maxValue = courses.reduce((acc, value) => Math.max(acc, value.duration), -Infinity);
+// console.log(maxValue);
+// const maxPrice = courses.reduce((acc, value) => {
+//     if(value.price > 0){
+//      acc.push(value.title.toUpperCase())
+//     }
+//     return acc;
+// }, []);
+// console.log(maxPrice);
+
+
+const names = ['js','js','ts','react','js','ts'];
+const uniqNames = names.reduce((acc, value) => {
+    if(!acc.includes(value)){
+        acc.push(value);
     }
-    if(a.name !== b.name){
-        return a.name - b.name;
-    }
-})
-console.log(items);
+    return acc;
+}, []);
+console.log(uniqNames);
