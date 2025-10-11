@@ -106,13 +106,13 @@ const users = [
 // });
 // console.log(friendsNum);
 
-// 4
-// const skillsUsers = users.reduce((acc, value) => {
-//     if(!acc.includes(value.skills)){
-//         acc.push(value.skills);
-//     }
-//     const tot = [acc];
-//     tot.sort(function(a, b){a.localeCompare(b)});
-//     return tot;
-// }, []);
-// console.log(skillsUsers);
+4
+const skillsUsers = users.reduce((acc, value) => {
+    if(!acc.includes(value.skills)){
+        acc.push(value.skills);
+    }
+    const tot = [acc];
+    tot.sort(function(a, b){a.localeCompare(b)});
+    return tot;
+}, []);
+console.log(skillsUsers);
