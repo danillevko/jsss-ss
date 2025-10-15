@@ -81,15 +81,127 @@
 // const myDog = new Dog('Labrador Retriever', 'Buddy');
 // console.log(myDog);
 
-class Animal{
-    makeSound(){
-        return 'a';
+// class Animal{
+//     makeSound(){
+//         return 'a';
+//     }
+// }
+// class Cat extends Animal{
+//     makeSound(){
+//         return 'meow';
+//     }
+// }
+// const cat = new Cat();
+// console.log(cat.makeSound);
+
+
+// class Animal{
+//     constructor(name){
+//         this.name = name
+//     }
+//     speak(){
+//         return 'meow';
+//     }
+// }
+// class Dog extends Animal{
+//     speak(){
+//         return 'Bark'
+//     }
+// }
+// const animal1 = new Animal('Lion');
+// console.log(animal1.speak()); // Animal sound
+
+// const dog1 = new Dog('Pug');
+// console.log(dog1.speak()); // Bark!
+
+
+// class Product{
+//     constructor(name, price, discount){
+//         this.name = name;
+//         this.price = price;
+//         this.discount = discount;
+//     }
+//     getDiscountPrice(){
+//         let percent = this.discount / 100;
+//         let total = this.price * percent;
+//         return this.price - total;
+//     }
+// }
+// const product1 = new Product('Phone', 500, 10);
+// console.log(product1.getDiscountPrice()); // 450
+
+
+// class Shape{
+//     constructor(color){
+//         this.color = color;
+//     }
+//     draw(){
+//         return 'a';
+//     }
+// }
+// class Circle extends Shape{
+//     constructor(color, radius){
+//         super(color);
+//         this.radius = radius;
+//     }
+//     draw(){
+//         return 'b';
+//     }
+// }
+// const myCircle = new Circle('red', 5);
+// console.log(myCircle.radius)
+// console.log(myCircle.color)
+
+
+// class Person{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+// class Employee extends Person{
+//     constructor(name, age, position){
+//         super(name, age);
+//         this.position = position;
+//     }
+// }
+// const john = new Employee("John", 32, "programmer");
+// console.log(john); // "John is a programmer and is 32 years old"
+
+
+
+class Book{
+    constructor(title, author, price){
+        this.title = title
+        this.author = author
+        this.price = price
     }
 }
-class Cat extends Animal{
-    makeSound(){
-        return 'meow';
+class Bookstore extends Book{
+    constructor(books, title, author, price){
+        super(title, author, price)
+        this.books = [];
+    }
+    addBook(book){
+        this.books.push(book);
+    }
+    removeBook(book){
+        this.books.pop(book);
+    }
+    listBooks(){
+        return this.books;
     }
 }
-const cat = new Cat();
-console.log(cat.makeSound);
+const myBookstore = new Bookstore();
+
+const book1 = new Book('The Catcher in the Rye', 'J.D. Salinger', 10);
+const book2 = new Book('To Kill a Mockingbird', 'Harper Lee', 12);
+const book3 = new Book('1984', 'George Orwell', 8);
+
+myBookstore.addBook(book1);
+myBookstore.addBook(book2);
+myBookstore.addBook(book3);
+
+console.log(myBookstore.listBooks()); // виведе всі книги у книжковому магазині
+
+myBookstore.removeBook(book2);
