@@ -8,13 +8,28 @@
 // let li = document.querySelector('a[href = "https://"]');
 // li.classList.add('link');
 
-let a = document.querySelectorAll('ul a[href^="http://"]');
-a.forEach(elements => {elements.style.color = 'orange'});
-let links = document.querySelectorAll('li a');
-links[0].classList.add('size');
-links[5].classList.add('size');
-let header = document.querySelector('h1');
-header.textContent = 'Hello World';
-header.classList.add('header');
-header.classList.replace('header', 'newHeader');
-console.log(links.classList.contains('list'));
+// let a = document.querySelectorAll('ul a[href^="http://"]');
+// a.forEach(elements => {elements.style.color = 'orange'});
+// let links = document.querySelectorAll('li a');
+// links[0].classList.add('size');
+// links[5].classList.add('size');
+// let header = document.querySelector('h1');
+// header.textContent = 'Hello World';
+// header.classList.add('header');
+// header.classList.replace('header', 'newHeader');
+// console.log(links.classList.contains('list'));
+
+// let a = document.createElement('span');
+// console.log(a);
+// a.textContent = 'abc'
+// let c = document.createElement('span');
+// console.log(c);
+// a.textContent = 'def'
+// let b = document.querySelector('.ul');
+// b.append(a);
+// b.prepend(a);
+// b.after(a);
+
+let b = document.querySelector('.ul');
+// b.innerHTML = '<li>blablabla</li>';
+b.insertAdjacentHTML('beforeBegin', '<li>blablabla</li>');
