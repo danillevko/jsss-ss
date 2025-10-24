@@ -30,6 +30,26 @@
 // b.prepend(a);
 // b.after(a);
 
-let b = document.querySelector('.ul');
-// b.innerHTML = '<li>blablabla</li>';
-b.insertAdjacentHTML('beforeBegin', '<li>blablabla</li>');
+// let a = document.querySelector('.ul');
+// b.innertAdjacentHTML('beforeBegin', '<li>blablabla</li>');
+
+
+// let b = document.createElement('h1');
+// b.textContent = 'Привіт, це перший мій створений елемент!';
+// b.classList.add('title');
+// document.body.append(b);
+
+// let b = document.createElement('img');
+// b.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7SdyvIASBkBBDEY6oShdzUjTkHz2mMDxOg&s';
+// b.alt = 'smile face';
+// let c = document.createElement('button');
+// c.type = 'submit';
+// a.append(b);
+// a.prepend(c);
+
+let a = document.querySelector('.site-nav__item');
+let b = document.createElement('a');
+a.append(b);
+b.href = 'https://edu.goiteens.com/learn/23446937/15266038/15266628/training?blockId=17671950';
+b.textContent = 'helo my neighbor';
+
