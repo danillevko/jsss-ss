@@ -30,7 +30,7 @@
 // b.prepend(a);
 // b.after(a);
 
-// let a = document.querySelector('.ul');
+// let ul = document.querySelector('.ul');
 // b.innertAdjacentHTML('beforeBegin', '<li>blablabla</li>');
 
 
@@ -47,9 +47,43 @@
 // a.append(b);
 // a.prepend(c);
 
-let a = document.querySelector('.site-nav__item');
-let b = document.createElement('a');
-a.append(b);
-b.href = 'https://edu.goiteens.com/learn/23446937/15266038/15266628/training?blockId=17671950';
-b.textContent = 'helo my neighbor';
+// let a = document.querySelector('.site-nav__item');
+// let b = document.createElement('a');
+// a.append(b);
+// b.href = 'https://edu.goiteens.com/learn/23446937/15266038/15266628/training?blockId=17671950';
+// b.textContent = 'helo my neighbor';
 
+
+// const colorPickerOptions = [
+//     { label: 'red', color: '#F44336' },
+//     { label: 'green', color: '#4CAF50' },
+//     { label: 'blue', color: '#2196F3' },
+//     { label: 'grey', color: '#607D8B' },
+//     { label: 'pink', color: '#E91E63' },
+//     { label: 'indigo', color: '#3F51B5' },
+//   ];
+//   document.addEventListener('DOMContentLoaded', () => {
+//       let b = document.querySelector('.color-picker');
+//       colorPickerOptions.forEach( element => {
+//           let a = document.createElement('button');
+//           a.lassNamec = 'button-style';
+//           a.style.backgroundColor = element.color;
+//           b.appendChild(a);
+//       });
+//   })
+
+let div = document.querySelector('.js-products');
+let a = document.createElement('article');
+a.className = 'product'
+let b = document.createElement('h2');
+b.textContent = 'Назва';
+b.className = 'product-name';
+div.appendChild(b);
+let c = document.createElement('p');
+c.className = 'product-descr';
+c.textContent = 'Опис';
+div.appendChild(c);
+let d = document.createElement('p');
+d.className = 'product-predct';
+d.textContent = 'Ціна: 1111 кредитів';
+div.appendChild(d);
