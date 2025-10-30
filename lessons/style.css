@@ -22,3 +22,19 @@
     width: 60px;
     height: 30px;
 }
+
+.btn{
+    width: 500px;
+    height: 200px;
+}
+.btn-off{
+    width: 500px;
+    height: 200px;
+}
+.add{
+    width: 500px;
+    height: 200px;
+}
+.header{
+    background-color: pink;
+}
