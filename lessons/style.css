@@ -24,8 +24,13 @@
 }
 
 .btn{
-    width: 500px;
-    height: 200px;
+    width: 100px;
+    height: 50px;
+}
+.p{
+    width: 100px;
+    height: 50px;
+    outline: solid black 1px;
 }
 .btn-off{
     width: 500px;
@@ -37,4 +42,8 @@
 }
 .header{
     background-color: pink;
+}
+
+.hidden{
+    display: none;
 }
