@@ -52,3 +52,22 @@
     width: 200px;
     height: 201px;
 }
+
+ .block {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+    outline: solid black 1px;
+    display: block;
+}
+.current-key {
+    outline: solid black 1px;
+    display: block;
+}
